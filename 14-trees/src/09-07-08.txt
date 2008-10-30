@@ -1,0 +1,33 @@
+recorridos en arbol
+
+1.- en anchura
+    uso de est de datos auxiliar
+        cola dinamica de dire de nodos del arbol
+
+algoritmo:
+
+0)   ingresar la direccion de raz a la colaaux
+1)   retirar elemento de la cola para procesar
+     la informacion del nodo eliminado de la 
+     cola (nodo visitado)
+2)   si el nodo visitado (el que se elimino de la cola)
+     tienen HI entonces se agrega a la cola auxiliar
+     la direccion del nodo HI
+3)   si el nodo visitado (el que se elimino de la cola)
+     tienen HD entonces se agrega a la cola auxiliar
+     la direccion del nodo HD
+4)   repetir desde el paso 1) hasta que la cola auxiliar
+     quede vacia
+
+
+2.- en profundidad
+
+o se va por la izquierda o se va por la derecha
+
+
+
+
+programa para ingresar por teclado dos palabras 
+de idioma castellano. generar un arbol de char para cada una
+imprimir los arboles y determinar el porcentaje de coincidencia
+de los caracteres

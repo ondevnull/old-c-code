@@ -1,0 +1,14 @@
+AC_INIT(README)
+
+AM_INIT_AUTOMAKE(bintrees,0.1)
+
+AM_CONFIG_HEADER(config.h)
+
+AC_PROG_CC
+
+AC_PROG_CXX
+
+AC_PROG_LIBTOOL
+
+AC_OUTPUT(Makefile src/Makefile)
+
