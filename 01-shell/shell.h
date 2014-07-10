@@ -25,7 +25,7 @@
  */
 
 #ifndef _SHELL_H
-#define	_SHELL_H
+#define _SHELL_H
 
 #include "../metodos/stdbase.h"
 /*
@@ -36,29 +36,24 @@
  * Output:
  */
 template <class T>
-void shell (T v[], int n)
-{
-    int inter = n/2, i;
-    bool band;
-	
-        while (inter)
-	{
-	    band = true;
-	    while (band)
-	    {
-		band = false;
-		for (i = 0; i + inter < n; i++)
-		{
-	            if (v[i] > v[i+inter])
-		    {
-			swappr (v[i], v[i+inter]);
-			band = true;
-		    }
-		}
-	    }
-	inter /= 2; // inter = inter / 2;
-	}
+void shell (T v[], int n) {
+  int inter = n/2, i;
+  bool band;
+  
+  while (inter) {
+    band = true;
+    while (band) {
+      band = false;
+      for (i = 0; i + inter < n; i++) {
+        if (v[i] > v[i+inter]) {
+          swappr (v[i], v[i+inter]);
+          band = true;
+        }
+      }
+    }
+    inter /= 2; // inter = inter / 2;
+  }
 };
 
-#endif	/* _SHELL_H */
+#endif  /* _SHELL_H */
 
