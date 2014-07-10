@@ -1,0 +1,9 @@
+wb = w = escribir
+rb = r = leer
+ab = a = modificar
+
+fprintf(variable, sizeof(variable), cantidad de veces a imprimir, punteroFILE);
+fputs
+
+fscanf
+fgets

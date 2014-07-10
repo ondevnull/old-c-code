@@ -1,0 +1,39 @@
+Tratando sobre binarios, sobre el uso de & y ^ en el código de lenguaje C.
+
+100 00 011 = 131
+100 01 011 = 139
+100 10 011 = 147
+100 11 011 = 155
+
+Recordando la tabla del código binario
+128 64 32 16 8 4 2 1
+
+Entonces tenemos que
+
+131 & 24 = 
+131     100 00 011
+24  &   000 11 000
+=       000 00 000
+
+1&0 = 0
+0&0 = 0
+1&1 = 1
+
+    001 01 101
+^   010 01 111
+=   011 00 010
+
+Con >> se corre dos posiciones en el binario, con un código como:
+
+uno = uno >> 2;
+
+Se consigue que por ejemplo: 001 00 001 sea 000 01 000. Fíjese que se corrieron
+todos los 1 y 0.
+
+Declarando con unsigned, el unsigned sirve para decirle cuantos bits puede usar.
+
+unsigned edad:7
+unsigned sexo:1
+
+Entonces así aprovecho los 8 bits.
+Para imprimir y leer se usa %u porque es unsigned!
